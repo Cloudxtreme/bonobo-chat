@@ -1,0 +1,15 @@
+<head>
+    <title>chatApp</title>
+</head>
+ 
+<body>
+    <div class="container">
+      <div class="pull-right"> {{> loginButtons}}</div>
+      {{> hello}} 
+      {{#if currentUser}}
+        	{{> input}}
+        {{/if}}
+      {{> messages}}
+    </div>
+</body>
+ 
